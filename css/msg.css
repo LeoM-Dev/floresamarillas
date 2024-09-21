@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+:root {
+    --black: #121214;
+    --white: #f7f5f6;
+    --yelow: #fbff00;
+}
+*{
+    font-family: 'Poppins',cursive;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    color: var(--white);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.description {
+    width:30em;
+    padding: 20px;
+    border-radius: 16px;
+    text-align:left;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom:30px;
+    color: var(--white);
+}
+
+.florescont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.florescont h5 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+}
+.flores {
+    gap: 40px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+button {
+    background-color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    border-radius: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+
+button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button:hover {
+    box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow;
+}
+
+#back {
+    width: 261px;
+    background-color: transparent;
+    color: var(--white);
+}
+#back:hover {
+    box-shadow: none;
+}
+@media screen and (max-width:700px){
+
+    div{
+        font-size: 1rem;
+    }
+
+    .button a{
+        font-size: 1rem;
+    }
+}

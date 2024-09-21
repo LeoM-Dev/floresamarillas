@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+:root {
+    --black: #121214;
+    --white: #f7f5f6;
+    --yelow: #fbff00;
+    --gray: #5e5a5a;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.greetings{
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: -5px;
+}
+.greetings > span{
+    animation: glow 3s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: var(--white);
+        text-shadow: 0 0 12px var(--white), 0 0 50px var(--yelow), 0 0 100px var(--yelow);
+    }
+    20%, 90%{
+        color: #535252;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+
+.button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    border-radius: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+.button button span {
+    font-size: 20px;
+    color: var(--gray);
+    font-weight: 900;
+}
+
+.button button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+    gap: 5px;
+}
+
+
+.button button:hover {
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+}
+
+@media screen and (max-width:700px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 1rem;
+    }
+
+    .button a{
+        font-size: 1rem;
+    }
+}
+
+
+
